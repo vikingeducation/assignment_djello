@@ -85,13 +85,11 @@ export function removeCardMember(card_id, user_id) {
         if (!response.ok) {
           throw setError(response)
         }
-        return response.json()
       })
-      .then((json) => {
+      .then(() => {
         dispatch(deleteCardMemberSuccess({
           card_id: card_id,
-          member_id: user_id,
-          activities: json.activities
+          member_id: user_id
         }))
       })
       .catch(error => {
@@ -132,7 +130,8 @@ export function updateCard(data, card_id) {
         }
         return response.json()
       }).then(json => {
-        dispatch(updateCardSuccess(json))
+        const massaged = arrayToObjectByID([json])
+        dispatch(updateCardSuccess(massaged))
       }).catch(error => {
         dispatch(updateCardFailure(error))
       })

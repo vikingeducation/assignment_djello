@@ -20,11 +20,16 @@ export default function board(state = initialState, action) {
       }
     case Actions.GET_BOARD_SUCCESS:
     case Actions.CREATE_BOARD_SUCCESS:
-    case Actions.UPDATE_BOARD_SUCCESS:
       return {
         ...state,
         ...data.board,
         isFetching: false
+      }
+    case Actions.UPDATE_BOARD_SUCCESS:
+      return {
+        ...state,
+        isFetching: false,
+        ...data.board,
       }
     case Actions.GET_BOARD_FAILURE:
     case Actions.UPDATE_BOARD_FAILURE:

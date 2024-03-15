@@ -47,7 +47,6 @@ class ListCard extends Component {
     const { title, member_ids, description, activities, id } = card
     let memberList = ''
 
-    console.log('activities', activities)
 
     if (member_ids) {
       memberList = member_ids.map(member_id => {

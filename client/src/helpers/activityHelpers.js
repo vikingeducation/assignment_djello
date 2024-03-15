@@ -1,3 +1,9 @@
+// updated card
+//  object: list, title, description, card, membership
+// verb: update, create, destroy
+// value: ...
+// user: name
+
 export function activitySentence(name, verb, object, value) {
 
 
@@ -7,8 +13,8 @@ export function activitySentence(name, verb, object, value) {
       card: `${name} created this card`
     },
     update: {
-      title: `${name} changed the title to '${value}'`,
-      description: `${name} changed the description to '${value}'`,
+      title: `${name} changed the title to ${value}`,
+      description: `${name} changed the description to ${value}`,
       list: `${name} moved the card to ${value}`
     },
     destroy: {

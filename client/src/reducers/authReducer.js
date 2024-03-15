@@ -37,7 +37,6 @@ function authentication(state = initialState, action) {
       return {
         ...state,
         token: null,
-        isLoggedIn: false,
       }
     case Actions.CREATE_USER_SUCCESS:
       return {

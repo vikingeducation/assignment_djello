@@ -1,5 +1,4 @@
-// export const baseURL = 'https://nameless-beyond-77500.herokuapp.com'
-export const baseURL = 'http://localhost:3000'
+export const baseURL = 'https://nameless-beyond-77500.herokuapp.com'
 
 export function arrayToObjectByID(data) {
   let massaged = {}

@@ -23,8 +23,6 @@
 client/logs
 client/*.log
 client/npm-debug.log*
-client/.git
-client/.gitignore
 
 # Dependency directories
 client/node_modules/
