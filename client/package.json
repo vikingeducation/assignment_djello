@@ -1,0 +1,60 @@
+{
+  "name": "project_djello",
+  "version": "1.0.0",
+  "description": "Trello clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/webpack-dev-server --hot --inline --config webpack.config.dev.js --port 4000",
+    "build": "node_modules/.bin/webpack --progress -p",
+    "deploy": "npm run build&&gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yxlau/project_djello_react.git"
+  },
+  "keywords": [
+    "react",
+    "djello"
+  ],
+  "author": "Yi-Xuan Lau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yxlau/project_djello_react/issues"
+  },
+  "homepage": "https://github.io/yxlau/project_djello_react",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "form-serialize": "^0.7.2",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.2",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-dom": "^15.6.2",
+    "react-popper": "^0.7.4",
+    "react-redux": "^5.0.6",
+    "react-sortable-hoc": "^0.6.8",
+    "reactstrap": "^5.0.0-alpha.3",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "validate.js": "^0.11.1",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.4.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.2.1",
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "gh-pages": "^1.1.0",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
